@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
+        <script src="tile.js"></script>
+        <script src="sketch.js"></script>
+        <link rel="stylesheet" href="../dist/output.css" />
+    </head>
+    <body class="bg-white dark:bg-gray-900">
+        <main class="container mx-auto">
+            <section
+                id="game"
+                class="flex flex-col justify-center gap-4 text-center mt-8"
+            >
+                <h1
+                    class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+                >
+                    Small Puzzle
+                </h1>
+                <p
+                    class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400"
+                >
+                    Refresh the page to start a new game
+                </p>
+                <div
+                    class="flex-1 mx-auto bg-white p-4 rounded-md shadow-sm dark:shadow-none"
+                >
+                    <div id="sketch-loader"></div>
+                </div>
+                <div id="win" class="flex-1 mx-auto"></div>
+            </section>
+        </main>
+    </body>
+</html>
